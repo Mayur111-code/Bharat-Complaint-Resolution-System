@@ -2,7 +2,7 @@ import axios from "axios";
 
 const API = axios.create({
  // baseURL: "https://sgims-backend.onrender.com/api" || "http://127.0.0.1:5000/api",
- baseURL: "http://localhost:5000/api"
+ baseURL: "https://bharat-complaint-resolution-system.onrender.com/api"
 });
 
 // Always attach token
