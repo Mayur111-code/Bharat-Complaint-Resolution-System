@@ -11,8 +11,8 @@ exports.getOfficerComplaints = async (req, res) => {
 
     const complaints = await Complaint.find({
       $or: [
-        { assignedTo: officerId },      // ✔ Admin assigned
-        { department: officerDept }     // ✔ Same department
+        { assignedTo: officerId },  
+        { department: officerDept }   
       ]
     }).sort({ createdAt: -1 });
 

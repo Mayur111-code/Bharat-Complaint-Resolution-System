@@ -1,9 +1,9 @@
 const Complaint = require("../models/Complaint");
 const User = require("../models/User");
 
-// =========================
+
 // GET ALL COMPLAINTS
-// =========================
+
 exports.getAllComplaints = async (req, res) => {
   try {
     const { department, status, priority } = req.query;
@@ -24,9 +24,8 @@ exports.getAllComplaints = async (req, res) => {
   }
 };
 
-// =========================
 // GET A SINGLE COMPLAINT BY ID
-// =========================
+
 exports.getComplaintAdmin = async (req, res) => {
   try {
     const complaint = await Complaint.findById(req.params.id)
@@ -42,9 +41,9 @@ exports.getComplaintAdmin = async (req, res) => {
   }
 };
 
-// =========================
+
 // ASSIGN COMPLAINT
-// =========================
+
 exports.assignComplaint = async (req, res) => {
   try {
     const complaintId = req.params.id;
@@ -75,9 +74,9 @@ exports.assignComplaint = async (req, res) => {
   }
 };
 
-// =========================
+
 // UPDATE STATUS
-// =========================
+
 exports.updateStatusAdmin = async (req, res) => {
   try {
     const complaintId = req.params.id;
@@ -104,9 +103,8 @@ exports.updateStatusAdmin = async (req, res) => {
   }
 };
 
-// =========================
 // GET ALL OFFICERS
-// =========================
+
 exports.getAllOfficers = async (req, res) => {
   try {
     const officers = await User.find({ role: "department" });

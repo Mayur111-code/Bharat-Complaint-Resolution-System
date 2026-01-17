@@ -16,7 +16,7 @@ exports.createComplaint = async (req, res) => {
       priority: priority || "Low",
       photos: photoUrls,
 
-      // FIX: department should default to category
+      
       department: department || category,  
 
       location: location || { 

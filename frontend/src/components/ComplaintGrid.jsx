@@ -1,26 +1,3 @@
-// import React from 'react';
-// import ComplaintCard from './ComplaintCard';
-
-// const ComplaintGrid = ({ complaints, onComplaintClick, viewType = 'user', layout = 'default', gridCols = 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3' }) => {
-//   return (
-//     <div className={`grid ${gridCols} gap-6`}>
-//       {complaints.map((complaint) => (
-//         <ComplaintCard
-//           key={complaint._id}
-//           complaint={complaint}
-//           onClick={() => onComplaintClick(complaint._id)}
-//           viewType={viewType}
-//           layout={layout}
-//         />
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default ComplaintGrid;
-
-
-
 import React from 'react';
 import ComplaintCard from './ComplaintCard';
 import { ClipboardList, PlusCircle } from 'lucide-react';
