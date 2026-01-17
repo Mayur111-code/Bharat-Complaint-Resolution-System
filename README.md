@@ -185,23 +185,3 @@ BCRS/
     └── README.md
 ```
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-For support, email support@bcrs.com or create an issue in the repository.
-
----
-
-**Note**: This is a development version. Ensure all environment variables are properly configured before deployment.</content>
-<parameter name="filePath">c:\Users\HP\OneDrive\Desktop\Bharat Complaint Resolution System (BCRS)\README.md
