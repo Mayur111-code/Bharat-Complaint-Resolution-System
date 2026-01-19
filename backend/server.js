@@ -28,7 +28,7 @@ app.use(cors({
     }
 
     // Allow production domain
-    if (origin === "https://bcrs-india.vercel.app") {
+    if (origin === "https://bcrs-bharat.vercel.app") {
       return callback(null, true);
     }
 
