@@ -51,7 +51,7 @@ app.use("/api/admin", adminRoutes);
 app.use("/api/officer", officerRoutes);
 
 
-app.get("/", (req, res) => res.send("SGIMS Backend Running Successfully!"));
+app.get("/", (req, res) => res.send("Bharat Complaint Resolution System Backend Running Successfully!"));
 
 
 const PORT = process.env.PORT || 5000;
