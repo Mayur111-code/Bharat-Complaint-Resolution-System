@@ -91,9 +91,12 @@ export default function ComplaintForm() {
         data.append("photos", file);
       });
 
-      await API.post("/complaints", data, {
-        headers: { "Content-Type": "multipart/form-data" }
-      });
+      // await API.post("/complaints", data, {
+      //   headers: { "Content-Type": "multipart/form-data" }
+      // });
+
+
+      await API.post("/complaints", data);
 
       toast.success("Grievance filed successfully!");
       setTimeout(() => navigate("/my-complaints"), 1500);

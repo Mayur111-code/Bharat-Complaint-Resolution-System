@@ -23,10 +23,13 @@ app.use(cors({
     if (!origin) return callback(null, true);
 
     
-    if (origin.match(/^http:\/\/localhost:\d+$/)) {
+    // if (origin.match(/^http:\/\/localhost:\d+$/)) {
+    //   return callback(null, true);
+    // }
+
+    if (origin.match("http://localhost:5173")){
       return callback(null, true);
     }
-
     // Allow production domain
     if (origin === "https://bcrs-bharat.vercel.app") {
       return callback(null, true);
@@ -51,7 +54,11 @@ app.use("/api/admin", adminRoutes);
 app.use("/api/officer", officerRoutes);
 
 
+
 app.get("/", (req, res) => res.send("Bharat Complaint Resolution System Backend Running Successfully!"));
+
+
+
 
 
 const PORT = process.env.PORT || 5000;
