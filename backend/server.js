@@ -27,9 +27,9 @@ app.use(cors({
     //   return callback(null, true);
     // }
 
-    if (origin.match("http://localhost:5173")){
-      return callback(null, true);
-    }
+    // if (origin.match("http://localhost:5173")){
+    //   return callback(null, true);
+    // }
     // Allow production domain
     if (origin === "https://bcrs-bharat.vercel.app") {
       return callback(null, true);

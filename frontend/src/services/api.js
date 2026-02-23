@@ -2,10 +2,10 @@ import axios from "axios";
 
 const API = axios.create({
 
-// baseURL: "https://bharat-complaint-resolution-system.onrender.com/api"  
+baseURL: "https://bharat-complaint-resolution-system.onrender.com/api"  
 
-baseURL : "http://localhost:5000/api"
-});
+// baseURL : "http://localhost:5000/api"
+ });
 
 // Always attach token
 API.interceptors.request.use((req) => {
